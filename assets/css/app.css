@@ -1,0 +1,27 @@
+.navbar {
+  position: relative;
+  top: 20px;
+  padding-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid #e7e7e7;
+  background: 0 0; }
+  .navbar .navbar-brand {
+    padding: 0;
+    background: url('/assets/images/logo.png') 0 0 no-repeat;
+    width: 100px; }
+  .navbar .navbar-left li a {
+    padding: 0px 10px;
+    margin: 11px 0; }
+  .navbar .navbar-left li:last-child a {
+    margin: 0;
+    padding: 15px; }
+  .navbar form {
+    margin: 0px; }
+    .navbar form input, .navbar form button {
+      height: 50px; }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      .navbar form .searchInput {
+        width: 400px !important; } }
+    @media (min-width: 1200px) {
+      .navbar form .searchInput {
+        width: 600px !important; } }
