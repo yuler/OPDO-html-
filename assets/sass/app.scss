@@ -3,6 +3,43 @@
 @import 'pages/header';
 @import 'pages/index';
 
+html{
+	body{
+		@media (max-width: $screen-xs-max) {
+			font-size: 12px;
+		}
+		@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+			font-size: 12px;
+		}
+		@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+			font-size: 14px;
+		}
+		@media (min-width: $screen-lg-min) {
+			font-size: 16px;
+		}
+		
+	}
+	
+	h1 {
+
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	h3 {
+		font-size: 1.3em;
+	}
+	h4 {
+
+	}
+	h5 {
+
+	}
+	h6 {
+		
+	}
+}
+
 a,a:focus{
 	color : black;
 }

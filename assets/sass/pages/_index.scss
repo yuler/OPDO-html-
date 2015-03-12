@@ -3,63 +3,153 @@
 		margin: 30px 0;
 		border: 2px solid $themeColor;
 		border-radius: 5px;
-		div {
+		>div {
+			padding: 0px;
+			&:first-child{
+				h4 {
+					border:0px;
+				}
+			}
+			/* &:after {
+				content: '';
+				border-right: 2px solid $themeColor;
+			} */
 			h4 {
-				width: 20px;
+				padding-left: 0.8em;
+				border-left: 2px solid $themeColor;
+				width: 1.8em;
 				writing-mode:tb-rl;
 			}
 			ul {
 				float: left;
 				padding: 0;
-				margin-left: 30px;
+				margin: 0.5em 0px 9px 30px;
+				@media (max-width: $screen-md-max){ 
+					margin: -0.6em;
+				}
+				@media (max-width: $screen-sm-max){ 
+					margin: -0.2em;
+				}
 				position: absolute;
 				top: 10px;
 				font-size: 0.9em;
 				li{
 					float: left;
 					width: 50%;
+					text-align: center;
+					@media (max-width: $screen-md-max){ 
+						width: 100%;
+					}
 					list-style-type: none;	
+				}
+			}
+		}
+		>div{
+			@media (max-width: $screen-sm-max){
+				&:nth-last-child(1),&:nth-last-child(2){
+					visibility:hidden;
+					display: none;
+				}
+			}
+			@media (max-width: $screen-xs-max){
+				&:nth-last-child(1),&:nth-last-child(2),&:nth-last-child(3){
+					visibility:hidden;
+					display: none;
 				}
 			}
 		}
 	}
 
 	.index-main{
-		.videos{
-			video-nav {
-				h2{
-					display: inline!important;
-					color: $themeColor;
-				}
-			}
+		.videos-head-category{
 			.video-head{
 				padding-bottom: 20px;
-				.video-content {
-					padding: 16px 10px;
+				.video-thumbnail a img{
+					height: 256px;
 				}
-				.fa {
-					/* font-size: 1.5em; */
+				.video-content {
+					padding: 14.5px 20px;
+					@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+						padding: 14.5px+1.5px 20px;
+					}
+					@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+						padding: 14.5px+1.5px+2px 20px;
+					}
+					
 				}
 			}
 			.video-list {
-				padding: 0px;
+				@media (max-width: $screen-xs-max) {
+					padding-left:15px;
+				}
 			}
-			.video-list >div{
+			/*.video-list >div{
+				@media (max-width: $screen-md-max){
+					&:nth-last-child(1),&:nth-last-child(2){
+						visibility:hidden;	
+						display: none;
+					}
+				}
+				@media (max-width: $screen-xs-max) {
+					padding-left:15px;
+				}
+			}*/
+			
+		}
+		.videos-head-category,.videos-nohead-category{
+			.video-list {
+				padding: 0px;
+				@media (max-width: $screen-xs-max) {
+					padding-left:15px;
+				}
+			}
+			.video-list >div{ 
 				padding: 0px;
 				padding-left: 20px;
 				padding-bottom: 20px;
+				@media (max-width: $screen-md-max){
+					&:nth-last-child(1),&:nth-last-child(2){
+						visibility:hidden;	
+						display: none;
+					}
+				}
+				@media (max-width: $screen-xs-max) {
+					padding-left:15px;
+				}
+			}
+			.video-nav {
+				h2{
+					display: inline-block;
+					a{
+						color: $themeDeepColor;
+					}
+				}
+				a {
+					margin: 0 0.2em;
+				}
 			}
 			.video-thumbnail {
-				a {
+				>a {
+					display: block;
 					width: 100%;
 					height: 100%;
 					img {
 						width: 100%;
+						height: 135px;
 					}
 					.video-thumbnail-title {
 						padding: 0 5px;
 						position: relative;
-						margin-top: -20px;
+						margin-top: -22px;
+						@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+							margin-top: -22px+2px;
+						}
+						@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+							margin-top: -22px+2px+3px;
+						}
+						@media (max-width: $screen-xs-max) {
+							margin-top: -22px+2px+3px+0.5px;
+						}
 						color: white;
 						background-color: rgba(0, 0, 0, 0.5);
 						span:last-child {
@@ -91,6 +181,22 @@
 					}
 					margin : 0;
 				}
+			}
+		}
+
+		.videos-nohead-category {
+			.video-list {
+				@media (max-width: $screen-xs-max) {
+					padding:0px;
+				}
+			}
+			.video-list >div{ 
+				@media (max-width: $screen-xs-max) {
+					padding:0px;
+					padding-left:15px;
+					padding-bottom: 20px;
+				}
+				padding: 0 15px  15px;
 			}
 		}
 		/*.video-lg {

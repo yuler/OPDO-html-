@@ -3,7 +3,9 @@
 	top: 20px;
 	padding-bottom: 15px;
 	border: 0;
-	border-bottom: 2px solid $navLineColor;
+	border-radius: 0px;
+	border-bottom: 2px solid $themeColor;
+	box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.5);
 	background: 0 0;
 	
 	.navbar-brand {
@@ -50,17 +52,17 @@
 			}
 			@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 				.searchInput{
-					width:160px!important;
+					width:160px;
 				}
 			}
 			@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 				.searchInput{
-					width:380px!important;
+					width:380px;
 				}
 			}
 			@media (min-width: $screen-lg-min) {
 				.searchInput{
-					width:580px!important;
+					width:560px;
 				}
 			}
 		}
