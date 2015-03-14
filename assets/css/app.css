@@ -37,10 +37,10 @@
     .navbar .navbar-right form button:hover {
       background-color: #f7341b;
       border-left: 0px; }
-    @media (min-width: 768px) and (max-width: 992px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       .navbar .navbar-right form .searchInput {
         width: 160px; } }
-    @media (min-width: 992px) and (max-width: 1200px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
       .navbar .navbar-right form .searchInput {
         width: 380px; } }
     @media (min-width: 1200px) {
@@ -111,10 +111,10 @@ footer {
       position: absolute;
       top: 10px;
       font-size: 0.9em; }
-      @media (max-width: 1200px) {
+      @media (max-width: 1199px) {
         .index .nav-tags > div ul {
           margin: -0.6em; } }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
         .index .nav-tags > div ul {
           margin: -0.2em; } }
       .index .nav-tags > div ul li {
@@ -122,27 +122,27 @@ footer {
         width: 50%;
         text-align: center;
         list-style-type: none; }
-        @media (max-width: 1200px) {
+        @media (max-width: 1199px) {
           .index .nav-tags > div ul li {
             width: 100%; } }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     .index .nav-tags > div:nth-last-child(1), .index .nav-tags > div:nth-last-child(2) {
       visibility: hidden;
       display: none; } }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .index .nav-tags > div:nth-last-child(1), .index .nav-tags > div:nth-last-child(2), .index .nav-tags > div:nth-last-child(3) {
       visibility: hidden;
       display: none; } }
 .index .index-main .videos-head-category .video-list, .index .index-main .videos-nohead-category .video-list {
   padding: 0px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .index .index-main .videos-head-category .video-list, .index .index-main .videos-nohead-category .video-list {
       padding-left: 15px; } }
 .index .index-main .videos-head-category .video-list > div, .index .index-main .videos-nohead-category .video-list > div {
   padding: 0px;
   padding-left: 20px;
   padding-bottom: 20px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .index .index-main .videos-head-category .video-list > div, .index .index-main .videos-nohead-category .video-list > div {
       padding-left: 15px; } }
 .index .index-main .videos-head-category .video-nav h2, .index .index-main .videos-nohead-category .video-nav h2 {
@@ -164,10 +164,10 @@ footer {
     margin-top: -22px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5); }
-    @media (min-width: 992px) and (max-width: 1200px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
       .index .index-main .videos-head-category .video-thumbnail > a .video-thumbnail-title, .index .index-main .videos-nohead-category .video-thumbnail > a .video-thumbnail-title {
         margin-top: -20px; } }
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       .index .index-main .videos-head-category .video-thumbnail > a .video-thumbnail-title, .index .index-main .videos-nohead-category .video-thumbnail > a .video-thumbnail-title {
         margin-top: -17px; } }
     .index .index-main .videos-head-category .video-thumbnail > a .video-thumbnail-title span:last-child, .index .index-main .videos-nohead-category .video-thumbnail > a .video-thumbnail-title span:last-child {
@@ -191,41 +191,41 @@ footer {
       float: right; }
 .index .index-main .videos-head-category .video-head {
   padding-bottom: 20px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .index .index-main .videos-head-category .video-head {
       padding-bottom: 15px; } }
   .index .index-main .videos-head-category .video-head .video-thumbnail a img {
     height: 256px; }
   .index .index-main .videos-head-category .video-head .video-content {
     padding: 14.5px 20px; }
-    @media (min-width: 992px) and (max-width: 1200px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
       .index .index-main .videos-head-category .video-head .video-content {
         padding: 16px 20px; } }
-    @media (min-width: 768px) and (max-width: 992px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       .index .index-main .videos-head-category .video-head .video-content {
         padding: 18px 20px; } }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .index .index-main .videos-head-category .video-list {
     padding-left: 15px; } }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .index .index-main .videos-head-category .video-list > div:nth-last-child(1), .index .index-main .videos-head-category .video-list > div:nth-last-child(2) {
     visibility: hidden;
     display: none; } }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .index .index-main .videos-head-category .video-list > div {
     padding-bottom: 15px; } }
 .index .index-main .videos-nohead-category .video-list {
   margin-top: -10px;
   margin-bottom: 10px;
   padding: 0 5px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .index .index-main .videos-nohead-category .video-list {
       padding: 0px;
       padding-right: 15px;
       margin-top: 0px; } }
 .index .index-main .videos-nohead-category .video-list > div {
   padding: 10px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .index .index-main .videos-nohead-category .video-list > div {
       padding: 0px;
       padding-left: 15px;
@@ -236,13 +236,13 @@ footer {
 
 html body {
   padding-top: 100px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     html body {
       font-size: 12px; } }
-  @media (min-width: 768px) and (max-width: 992px) {
+  @media (min-width: 768px) and (max-width: 991px) {
     html body {
       font-size: 12px; } }
-  @media (min-width: 992px) and (max-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     html body {
       font-size: 14px; } }
   @media (min-width: 1200px) {
