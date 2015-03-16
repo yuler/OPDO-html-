@@ -1,0 +1,172 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'gulp-concat' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'gulp-concat', null ]
+6 verbose cache add name=undefined spec="gulp-concat" args=["gulp-concat",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'gulp-concat',
+7 verbose parsed url   path: 'gulp-concat',
+7 verbose parsed url   href: 'gulp-concat' }
+8 silly lockFile a9575072-gulp-concat gulp-concat
+9 verbose lock gulp-concat /home/yule/.npm/a9575072-gulp-concat.lock
+10 silly lockFile a9575072-gulp-concat gulp-concat
+11 silly lockFile a9575072-gulp-concat gulp-concat
+12 verbose addNamed [ 'gulp-concat', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 190d832a-gulp-concat gulp-concat@
+15 verbose lock gulp-concat@ /home/yule/.npm/190d832a-gulp-concat.lock
+16 silly addNameRange { name: 'gulp-concat', range: '*', hasData: false }
+17 verbose request where is /gulp-concat
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id ced417a8bc9ca07d
+20 verbose url raw /gulp-concat
+21 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-concat' ]
+22 verbose url resolved https://registry.npmjs.org/gulp-concat
+23 verbose request where is https://registry.npmjs.org/gulp-concat
+24 info trying registry request attempt 1 at 12:01:59
+25 verbose etag "9KFQLP9380851XN1DQHUX63RL"
+26 http GET https://registry.npmjs.org/gulp-concat
+27 http 200 https://registry.npmjs.org/gulp-concat
+28 silly registry.get cb [ 200,
+28 silly registry.get   { date: 'Mon, 16 Mar 2015 04:02:00 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     etag: '"6HU0KL05Z9JNLJ3BGKPRDJGM2"',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     'content-length': '35097',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-nrt6129-NRT',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1426478520.305861,VS0,VE489',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly addNameRange number 2 { name: 'gulp-concat', range: '*', hasData: true }
+30 silly addNameRange versions [ 'gulp-concat',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.1.0',
+30 silly addNameRange     '2.0.0',
+30 silly addNameRange     '2.1.0',
+30 silly addNameRange     '2.1.1',
+30 silly addNameRange     '2.1.2',
+30 silly addNameRange     '2.1.3',
+30 silly addNameRange     '2.1.4',
+30 silly addNameRange     '2.1.5',
+30 silly addNameRange     '2.1.6',
+30 silly addNameRange     '2.1.7',
+30 silly addNameRange     '2.2.0',
+30 silly addNameRange     '2.3.0',
+30 silly addNameRange     '2.3.3',
+30 silly addNameRange     '2.3.4',
+30 silly addNameRange     '2.3.5',
+30 silly addNameRange     '2.4.0',
+30 silly addNameRange     '2.4.1',
+30 silly addNameRange     '2.4.2',
+30 silly addNameRange     '2.4.3',
+30 silly addNameRange     '2.5.0',
+30 silly addNameRange     '2.5.1',
+30 silly addNameRange     '2.5.2' ] ]
+31 verbose addNamed [ 'gulp-concat', '2.5.2' ]
+32 verbose addNamed [ '2.5.2', '2.5.2' ]
+33 silly lockFile f86cbda2-gulp-concat-2-5-2 gulp-concat@2.5.2
+34 verbose lock gulp-concat@2.5.2 /home/yule/.npm/f86cbda2-gulp-concat-2-5-2.lock
+35 silly lockFile f86cbda2-gulp-concat-2-5-2 gulp-concat@2.5.2
+36 silly lockFile f86cbda2-gulp-concat-2-5-2 gulp-concat@2.5.2
+37 silly lockFile 190d832a-gulp-concat gulp-concat@
+38 silly lockFile 190d832a-gulp-concat gulp-concat@
+39 silly resolved [ { name: 'gulp-concat',
+39 silly resolved     description: 'Concatenates files',
+39 silly resolved     version: '2.5.2',
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'https://github.com/wearefractal/gulp-concat' },
+39 silly resolved     author:
+39 silly resolved      { name: 'Fractal',
+39 silly resolved        email: 'contact@wearefractal.com',
+39 silly resolved        url: 'http://wearefractal.com/' },
+39 silly resolved     files: [ 'index.js' ],
+39 silly resolved     keywords: [ 'gulpplugin' ],
+39 silly resolved     dependencies:
+39 silly resolved      { 'concat-with-sourcemaps': '^1.0.0',
+39 silly resolved        'gulp-util': '^3.0.1',
+39 silly resolved        through2: '^0.6.3' },
+39 silly resolved     devDependencies:
+39 silly resolved      { gulp: '^3.8.7',
+39 silly resolved        'gulp-sourcemaps': '^1.1.4',
+39 silly resolved        istanbul: '^0.3.2',
+39 silly resolved        mocha: '^2.0.1',
+39 silly resolved        'mocha-lcov-reporter': '0.0.1',
+39 silly resolved        should: '^5.0.0',
+39 silly resolved        'stream-array': '^1.0.1',
+39 silly resolved        'stream-assert': '^2.0.1' },
+39 silly resolved     scripts: { test: 'mocha', coverage: 'istanbul cover _mocha' },
+39 silly resolved     engines: { node: '>= 0.10' },
+39 silly resolved     licenses: [ [Object] ],
+39 silly resolved     gitHead: '21de607f81a4ef6fcc713f4839c2ffb2f44a3d42',
+39 silly resolved     bugs: { url: 'https://github.com/wearefractal/gulp-concat/issues' },
+39 silly resolved     homepage: 'https://github.com/wearefractal/gulp-concat',
+39 silly resolved     _id: 'gulp-concat@2.5.2',
+39 silly resolved     _shasum: 'd644372cdc2b3cdb421a8a941c8d74e21d815f14',
+39 silly resolved     _from: 'gulp-concat@',
+39 silly resolved     _npmVersion: '2.5.0',
+39 silly resolved     _nodeVersion: '0.10.35',
+39 silly resolved     _npmUser: { name: 'fractal', email: 'contact@wearefractal.com' },
+39 silly resolved     maintainers: [ [Object] ],
+39 silly resolved     dist:
+39 silly resolved      { shasum: 'd644372cdc2b3cdb421a8a941c8d74e21d815f14',
+39 silly resolved        tarball: 'http://registry.npmjs.org/gulp-concat/-/gulp-concat-2.5.2.tgz' },
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/gulp-concat/-/gulp-concat-2.5.2.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install gulp-concat@2.5.2 into /usr/lib
+41 info installOne gulp-concat@2.5.2
+42 verbose lib/node_modules/gulp-concat unbuild
+43 verbose tar unpack /home/yule/.npm/gulp-concat/2.5.2/package.tgz
+44 silly lockFile cfff500e-usr-lib-node-modules-gulp-concat tar:///usr/lib/node_modules/gulp-concat
+45 verbose lock tar:///usr/lib/node_modules/gulp-concat /home/yule/.npm/cfff500e-usr-lib-node-modules-gulp-concat.lock
+46 silly lockFile 953661a1-pm-gulp-concat-2-5-2-package-tgz tar:///home/yule/.npm/gulp-concat/2.5.2/package.tgz
+47 verbose lock tar:///home/yule/.npm/gulp-concat/2.5.2/package.tgz /home/yule/.npm/953661a1-pm-gulp-concat-2-5-2-package-tgz.lock
+48 silly gunzTarPerm modes [ '775', '664' ]
+49 error Error: EACCES, mkdir '/usr/lib/node_modules/gulp-concat'
+49 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/gulp-concat']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/lib/node_modules/gulp-concat',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/lib/node_modules/gulp-concat',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:107:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Linux 3.13.0-24-generic
+52 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "gulp-concat"
+53 error cwd /home/yule/Code/html
+54 error node -v v0.10.33
+55 error npm -v 1.4.28
+56 error path /usr/lib/node_modules/gulp-concat
+57 error fstream_path /usr/lib/node_modules/gulp-concat
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/lib/node_modules/gulp-concat'
+63 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:107:15)
+64 verbose exit [ 3, true ]

@@ -102,8 +102,7 @@ footer {
     .index .nav-tags > div h4 {
       padding-left: 0.8em;
       border-left: 2px solid #F9604C;
-      width: 1.8em;
-      writing-mode: tb-rl; }
+      width: 1.8em; }
     .index .nav-tags > div ul {
       float: left;
       padding: 0;
