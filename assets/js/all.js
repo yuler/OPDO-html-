@@ -8,4 +8,5 @@ $(function(){
 		format: 'yyyy-mm-dd',
 		// endDate : '2013-02-02'
 	})
+
 });
