@@ -78,7 +78,7 @@
 			border-left: 8px solid transparent;
 			border-right: 8px solid transparent;
 			border-bottom: 8px solid $themeColor;
-			border-bottom-color: red;
+			border-bottom-color: $themeColor;
 			padding-top: 7px;
 			position: absolute;
 			top: -15px;
@@ -89,7 +89,7 @@
 			display: inline-block;
 			border-left: 6px solid transparent;
 			border-right: 6px solid transparent;
-			border-bottom: 6px solid white;
+			border-bottom: 6px solid $backgroundColor;
 			padding-top: 9px;
 			position: absolute;
 			top: -15px;
