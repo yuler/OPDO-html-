@@ -1,0 +1,24 @@
+.video{
+	.breadcrumb {
+		margin-top: 20px;
+	}
+	.video-player{
+		video {
+			width: 100%;
+		}
+		.nav-tabs li{
+			width: 50%;
+			text-align: center;
+		}
+		.tab-content {
+			margin-top: 20px;
+			ul {
+				padding-left: 0px;
+				li {
+					list-style-type: none;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
