@@ -9,4 +9,11 @@ $(function(){
 		// endDate : '2013-02-02'
 	})
 
+	$('.raty').raty({ 
+		starType: 'i',
+		hints: ['bad', 'poor', 'regular', 'good', 'gorgeous'],
+		starOff: 'fa fa-star-o',
+		starOn: 'fa fa-star',
+	});
+	
 });

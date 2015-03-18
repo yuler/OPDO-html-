@@ -1,0 +1,7 @@
+{
+  "name": "my-project",
+  "dependencies": {
+    "raty": "~2.7.0"
+  },
+  "devDependencies": {}
+}
