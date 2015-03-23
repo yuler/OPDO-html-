@@ -141,6 +141,12 @@
 					margin : 0;
 				}
 			}
+			.fa {
+				color:$iconColor;
+			}
+			.fa:hover{
+				color: $themeColor;
+			};
 		}
 		.videos-head-category{
 			.video-head{

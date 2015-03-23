@@ -1,0 +1,88 @@
+.settings {
+	ul.settings-menu {
+		display: block;
+		padding-left: 15px;
+		float: left;
+		position: fixed;
+		z-index: 2;
+		li {
+			width: 100px;
+			padding: 15px 0px;
+			list-style-type: none;
+			text-align: center;
+			background-color: $backgroundGrayColor;
+			a, i {
+				text-decoration: none;
+				color:$iconColor;
+				&:hover{
+					color: $themeColor;
+					.fa {
+						color: $themeColor;
+					}
+				}
+				display: block;
+			}
+			&.active {
+				background-color: $themeColor;
+				a, i{
+					display: block;
+					color: white;
+					&:hover .fa {
+						color:white;	
+					}
+				}
+				& .arrow:before{
+					margin-top: 12px;
+					max-height: 0px;
+					content: '';
+					display: inline-block;
+					border-top: 10px solid transparent;
+					border-bottom: 10px solid transparent;
+					border-right: 15px solid white;
+					border-right-color: white;
+					position: absolute;
+					left: 100px;
+					z-index: 5;
+				}
+			}
+		}
+		
+	}
+	div.settings-content {
+		min-height: 30em;
+		display: inline-block;
+		padding: 30px 30px 30px 100px+15px+30px;
+		.settings-avatar {
+			img {
+				display: block;
+				width: 100px;
+			}
+			input {
+				margin-top: -30px;
+				position: absolute;
+				left: 15px;
+				width: 100px;
+				opacity: 0;
+				filter: alpha(opacity=0);
+				&:hover{
+					cursor: pointer;
+				}
+			}
+		}
+		&.settings-changePwd {
+			padding-top: 8em;
+		}
+		&.settings-unfinished {
+			padding-left: 130px;
+			>div {
+				padding: 0px;
+				padding-left: 20px;
+				margin-bottom: 20px;
+				img {
+					width: 100%;
+				}
+				
+			}
+		}
+	}
+}

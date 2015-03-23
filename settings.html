@@ -6,56 +6,149 @@
 
 		<!--#include file="partials/header.html"-->	
 
-		<div class="container index">
+		<div class="container settings">
 			<div class="row">
-				<div class="col-sm-3 col-lg-2">
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					    <div class="panel panel-default">
-					    <div class="panel-heading" role="tab" id="headingOne">
-					      <h4 class="panel-title">
-					        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					          个人设置
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-					      <div class="panel-body">
-					      
-					      </div>
-					    </div>
-					  </div>
-					  <div class="panel panel-default">
-					    <div class="panel-heading" role="tab" id="headingTwo">
-					      <h4 class="panel-title">
-					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					          我的视频
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-					      <div class="panel-body">
-					       
-					      </div>
-					    </div>
-					  </div>
-					  <div class="panel panel-default">
-					    <div class="panel-heading" role="tab" id="headingThree">
-					      <h4 class="panel-title">
-					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					          其他
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-					      <div class="panel-body">
-					       
-					      </div>
-					    </div>
-					  </div>
-					</div>
-				</div>
-				<div class="col-sm-9 col-lg-10">
-				
+				<ul class="settings-menu">
+					<li class="active">
+						<a href="/settings.html">
+							<i class="arrow"></i>
+							<i class="fa fa-cog fa-2x"></i>
+							基本信息
+						</a>
+					</li>
+					<li>
+						<a href="/settings/changePwd.html">
+							<i class="arrow"></i>
+							<i class="fa fa-key fa-2x"></i>
+							修改密码
+						</a>
+					</li>
+					<li>
+						<a href="/settings/unfinished.html">
+							<i class="arrow"></i>
+							<i class="fa fa-play fa-2x"></i>
+							未看完的视频
+						</a>
+					</li>
+					<li>
+						<a href="/settings/collect.html">
+							<i class="arrow"></i>
+							<i class="fa fa-star fa-2x"></i>
+							收藏的视频
+						</a>
+					</li>
+					<li>
+						<a href="/settings/history.html">
+							<i class="arrow"></i>
+							<i class="fa fa-history fa-2x"></i>
+							播放记录
+						</a>
+					</li>
+					<li>
+						<a href="/settings/questionnaire.html">
+							<i class="arrow"></i>
+							<i class="fa fa-question fa-2x"></i>
+							调查问卷
+						</a>
+					</li>
+				</ul>
+				<div class="settings-content row">
+					<form class="form-horizontal clearfi" role="form" method="POST" action="/auth/login">
+						<div class="col-md-4 col-sm-4 settings-avatar">
+							<center>
+								<img src="/assets/images/avatar.png" alt="">
+								<br>
+								<a href="javascript:void(0);" class="btn btn-primary">
+									<i class="fa fa-picture-o"></i>
+									上传头像
+									<input type="file" class="btn btn-link">
+								</a>
+							</center>
+						</div>
+						<div class="col-md-5 col-sm-8">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+										<input type="text" id="email" name="email" class="form-control" placeholder="Email" autocapitalize="off" >
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-key"></i></span>
+										<input type="password" id="email" name="email" class="form-control" placeholder="密码">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-user"></i></span>
+										<input type="text" id="email" name="email" class="form-control" placeholder="姓名">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+									    <div class="radio radio-primary radio-inline">
+									    	<input type="radio" id="inlineRadio1" name="sex" checked>
+									    	<label for="inlineRadio1">男</label>
+									    </div>
+									    <div class="radio radio-danger radio-inline">
+									     	<input type="radio" id="inlineRadio2" name="sex">
+									    	<label for="inlineRadio2">女</label>
+									    </div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										<input type="text" class="form-control bs3-datepicker" placeholder="出生日期">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+										<select name="" class="form-control" data-placeholder="证件类型">
+											<option value="">身份证</option>
+											<option value="">护照</option>
+											<option value="">军官证</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+										<input type="text" id="email" name="email" class="form-control" placeholder="text"  value="123456.." >
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+										<input type="text" id="email" name="email" class="form-control" placeholder="text"  value="123456.." >
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<a href="/" type="submit" class="btn btn-primary btn-block">
+										<i class="fa fa-save"></i>&nbsp;&nbsp;保&nbsp;&nbsp;存
+									</a>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

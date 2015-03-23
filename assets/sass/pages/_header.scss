@@ -95,9 +95,6 @@
 			top: -15px;
 			left: 102px+10px;
 		}
-		//.dropdown:hover .dropdown-menu {
-		//   display: block;
-		//}
 		.nav-avatar {
 			padding : 0px 15px;
 			img {
@@ -105,5 +102,8 @@
 				width : 50px;
 			}
 		}
+	}
+	a:hover{
+		color: $themeColor!important;
 	}
 }
