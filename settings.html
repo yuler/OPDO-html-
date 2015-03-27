@@ -8,144 +8,124 @@
 
 		<div class="container settings">
 			<div class="row">
-				<ul class="settings-menu">
-					<li class="active">
-						<a href="/settings.html">
-							<i class="arrow"></i>
-							<i class="fa fa-cog fa-2x"></i>
-							基本信息
-						</a>
-					</li>
-					<li>
-						<a href="/settings/changePwd.html">
-							<i class="arrow"></i>
-							<i class="fa fa-key fa-2x"></i>
-							修改密码
-						</a>
-					</li>
-					<li>
-						<a href="/settings/unfinished.html">
-							<i class="arrow"></i>
-							<i class="fa fa-play fa-2x"></i>
-							未看完的视频
-						</a>
-					</li>
-					<li>
-						<a href="/settings/collect.html">
-							<i class="arrow"></i>
-							<i class="fa fa-star fa-2x"></i>
-							收藏的视频
-						</a>
-					</li>
-					<li>
-						<a href="/settings/history.html">
-							<i class="arrow"></i>
-							<i class="fa fa-history fa-2x"></i>
-							播放记录
-						</a>
-					</li>
-					<li>
-						<a href="/settings/questionnaire.html">
-							<i class="arrow"></i>
-							<i class="fa fa-question fa-2x"></i>
-							调查问卷
-						</a>
-					</li>
-				</ul>
-				<div class="settings-content row">
-					<form class="form-horizontal clearfi" role="form" method="POST" action="/auth/login">
-						<div class="col-md-4 col-sm-4 settings-avatar">
-							<center>
-								<img src="/assets/images/avatar.png" alt="">
-								<br>
-								<a href="javascript:void(0);" class="btn btn-primary">
-									<i class="fa fa-picture-o"></i>
-									上传头像
-									<input type="file" class="btn btn-link">
-								</a>
-							</center>
-						</div>
-						<div class="col-md-5 col-sm-8">
-							<div class="form-group">
-								<div class="col-sm-12">
+				<div class="col-sm-2 settings-menu">
+					<ul>
+						<li class="active">
+							<a href="/settings.html">
+								<i class="fa fa-cog"></i>&nbsp;&nbsp;
+								基本信息
+							</a>
+						</li>
+						<li>
+							<a href="/settings/changePwd.html">
+								<i class="fa fa-key"></i>&nbsp;&nbsp;
+								修改密码
+							</a>
+						</li>
+						<li>
+							<a href="/settings/unfinished.html">
+								<i class="fa fa-play"></i>&nbsp;&nbsp;
+								未看完的视频
+							</a>
+						</li>
+						<li>
+							<a href="/settings/collect.html">
+								<i class="fa fa-star"></i>&nbsp;&nbsp;
+								收藏的视频
+							</a>
+						</li>
+						<li>
+							<a href="/settings/history.html">
+								<i class="fa fa-history"></i>&nbsp;&nbsp;
+								播放记录
+							</a>
+						</li>
+						<li>
+							<a href="/settings/questionnaire.html">
+								<i class="fa fa-question"></i>&nbsp;&nbsp;
+								调查问卷
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-9 col-sm-offset-1 settings-content">
+					<form method="POST" action="/auth/login">
+						<div class="row">
+							<div class="col-sm-7">
+								<div class="form-group">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-										<input type="text" id="email" name="email" class="form-control" placeholder="Email" autocapitalize="off" >
+										<input type="text" id="email" name="email" class="form-control" placeholder="Email">
 									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
+								<div class="form-group">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-key"></i></span>
 										<input type="password" id="email" name="email" class="form-control" placeholder="密码">
 									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
+								<div class="form-group">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-user"></i></span>
 										<input type="text" id="email" name="email" class="form-control" placeholder="姓名">
 									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
+								<div class="form-group">
 									<div class="input-group">
 									    <div class="radio radio-primary radio-inline">
 									    	<input type="radio" id="inlineRadio1" name="sex" checked>
 									    	<label for="inlineRadio1">男</label>
 									    </div>
-									    <div class="radio radio-danger radio-inline">
+									    <div class="radio radio-primary radio-inline">
 									     	<input type="radio" id="inlineRadio2" name="sex">
 									    	<label for="inlineRadio2">女</label>
 									    </div>
 									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
+								<div class="form-group">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 										<input type="text" class="form-control bs3-datepicker" placeholder="出生日期">
 									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
+								<div class="form-group">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
 										<select name="" class="form-control" data-placeholder="证件类型">
 											<option value="">身份证</option>
 											<option value="">护照</option>
-											<option value="">军官证</option>
 										</select>
 									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
+								<div class="form-group">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
 										<input type="text" id="email" name="email" class="form-control" placeholder="text"  value="123456.." >
 									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
+								<div class="form-group">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-phone"></i></span>
 										<input type="text" id="email" name="email" class="form-control" placeholder="text"  value="123456.." >
 									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
-									<a href="/" type="submit" class="btn btn-primary btn-block">
-										<i class="fa fa-save"></i>&nbsp;&nbsp;保&nbsp;&nbsp;存
-									</a>
+								<div class="form-group">
+										<a href="/" type="submit" class="btn btn-primary">
+											<i class="fa fa-save"></i>&nbsp;&nbsp;保存
+										</a>
 								</div>
+							</div>
+							<div class="col-sm-5">
+								<center>
+									<div class="form-group">
+										<div class="avatar">
+											<img src="/assets/images/avatar.png" alt="">
+										</div>
+										<br>
+										<a href="" class="btn btn-primary" onclick="$('#uploadAvatar').trigger('click');">上传头像</a>
+										<input type="file" class="hide" id="uploadAvatar">
+									</div>
+								</center>
 							</div>
 						</div>
 					</form>

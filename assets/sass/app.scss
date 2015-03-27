@@ -5,23 +5,36 @@
 @import 'pages/index';
 @import 'pages/video';
 @import 'pages/settings';
+@import 'pages/search';
+@import 'pages/tags';
 
 html{
 	body{
 		padding-top: 90px;
-		@media (max-width: $screen-xs-max) {
-			font-size: 12px;
+		height:100%;
+		&{
+			@media (max-width: $screen-xs-max) {
+				font-size: 12px!important;
+				.xs-hide, .sm-hide, .md-hide{
+					display: none;
+				}
+			}
+			@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+				font-size: 12px!important;
+				.sm-hide,.md-hide {
+					display: none;
+				}
+			}
+			@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+				font-size: 14px!important;
+				.md-hide {
+					display: none;
+				}
+			}
+			@media (min-width: $screen-lg-min) {
+				font-size: 16px!important;
+			}
 		}
-		@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-			font-size: 12px;
-		}
-		@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-			font-size: 14px;
-		}
-		@media (min-width: $screen-lg-min) {
-			font-size: 16px;
-		}
-		
 	}
 	
 	h1 {
@@ -72,4 +85,8 @@ form {
 		label{
 		}
 	}
+}
+
+.pager li>a{
+	padding: 5px 5em;
 }

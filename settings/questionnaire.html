@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="">
+	<!--#include file="/partials/head.html"-->
+	
+	<body>
+
+		<!--#include file="/partials/header.html"-->	
+
+		<div class="container settings questionnaire">
+			<div class="row">
+				<div class="col-sm-2 settings-menu">
+					<ul>
+						<li>
+							<a href="/settings.html">
+								<i class="fa fa-cog"></i>&nbsp;&nbsp;
+								基本信息
+							</a>
+						</li>
+						<li>
+							<a href="/settings/changePwd.html">
+								<i class="fa fa-key"></i>&nbsp;&nbsp;
+								修改密码
+							</a>
+						</li>
+						<li>
+							<a href="/settings/unfinished.html">
+								<i class="fa fa-play"></i>&nbsp;&nbsp;
+								未看完的视频
+							</a>
+						</li>
+						<li>
+							<a href="/settings/collect.html">
+								<i class="fa fa-star"></i>&nbsp;&nbsp;
+								收藏的视频
+							</a>
+						</li>
+						<li>
+							<a href="/settings/history.html">
+								<i class="fa fa-history"></i>&nbsp;&nbsp;
+								播放记录
+							</a>
+						</li>
+						<li class="active">
+							<a href="/settings/questionnaire.html">
+								<i class="fa fa-question"></i>&nbsp;&nbsp;
+								调查问卷
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-9 col-sm-offset-1 settings-content">
+					<div class="row">
+						<div class="questionnaire col-sm-7">
+							<ul>
+								<li>
+									<span>主题:</span>
+									<select name="" id="" class="form-control">
+										<option value="你的留学身份">你的留学身份</option>
+										<option value="你的留学经费来源">你的留学经费来源</option>
+										<option value="你留学毕业后打算">你留学毕业后打算</option>
+										<option value="你喜欢的行前培训方式">你喜欢的行前培训方式</option>
+									</select> 
+								</li>
+
+								<li>
+									<div class="radio radio-primary radio-inline">
+								    	<input type="radio" id="inlineRadio1" name="sex" checked>
+								    	<label for="inlineRadio1">语言生本科生</label>
+								    </div>
+								</li>
+								<li>
+									<div class="radio radio-primary radio-inline">
+								     	<input type="radio" id="inlineRadio2" name="sex">
+								    	<label for="inlineRadio2">本科生</label>
+								    </div>
+								</li>
+								<li>
+									<div class="radio radio-primary radio-inline">
+								     	<input type="radio" id="inlineRadio3" name="sex">
+								    	<label for="inlineRadio3">本硕连读生</label>
+								    </div>
+								</li>
+								<li>
+									<div class="radio radio-primary radio-inline">
+								     	<input type="radio" id="inlineRadio4" name="sex">
+								    	<label for="inlineRadio4">One</label>
+								    </div>
+								</li>
+							</ul>
+							<a href="javascript:void(0);" class="btn btn-primary">参加投票</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--#include file="/partials/footer.html"-->
+		
+		<!--#include file="/partials/scripts.html"-->
+	</body>
+
+</html>

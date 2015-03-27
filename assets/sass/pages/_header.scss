@@ -1,6 +1,12 @@
 .navbar {
 	padding-top: 20px;
 	padding-bottom: 15px;
+	@media (max-width: $screen-xs-max) {
+		padding-bottom: 0px;
+		.navbar-header {
+			padding-bottom: 15px;
+		}
+	}
 	border: 0;
 	border-radius: 0px;
 	border-bottom: 1px solid $lineColor;
@@ -23,6 +29,7 @@
 		}
 	}
 	.navbar-right {
+		margin:0 -15px;
 		form {
 			margin : 0px;
 			input,
@@ -51,55 +58,99 @@
 			}
 			@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 				.searchInput{
-					width:160px;
+					width:345px;
 				}
 			}
 			@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 				.searchInput{
-					width:380px;
+					width:560px;
 				}
 			}
 			@media (min-width: $screen-lg-min) {
 				.searchInput{
-					width:560px;
+					width:750px;
 				}
 			}
 		}
-		.dropdown-menu {
-			border-top: 2px solid $themeColor;
-			margin-top : 15px!important;
-			@media (min-width: $screen-lg-min) {
-				margin-top: 19px!important;
-			}
-		} 
-		.dropdown-menu:before {
-			content: '';
-			display: inline-block;
-			border-left: 8px solid transparent;
-			border-right: 8px solid transparent;
-			border-bottom: 8px solid $themeColor;
-			border-bottom-color: $themeColor;
-			padding-top: 7px;
-			position: absolute;
-			top: -15px;
-			left: 100px+10px;
-		}
-		.dropdown-menu:after {
-			content: '';
-			display: inline-block;
-			border-left: 6px solid transparent;
-			border-right: 6px solid transparent;
-			border-bottom: 6px solid $backgroundColor;
-			padding-top: 9px;
-			position: absolute;
-			top: -15px;
-			left: 102px+10px;
-		}
-		.nav-avatar {
+		.nav-avatar, .nav-avatar-hide {
 			padding : 0px 15px;
 			img {
 				border-radius: 25px;
 				width : 50px;
+			}
+		}
+		.dropdown-menu{
+			border-top: 2px solid $themeColor;
+			margin-top : 15px!important;
+			@media (min-width: $screen-lg-min) {
+				margin-top: 15px!important;
+			}
+			img {
+				width:80px;
+			}
+			.pager {
+				margin:5px 0px;
+			}
+			&:before {
+				content: '';
+				display: inline-block;
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-bottom: 8px solid $themeColor;
+				border-bottom-color: $themeColor;
+				padding-top: 7px;
+				position: absolute;
+				top: -15px;
+				right: 45px;
+			}
+			&:after {
+				content: '';
+				display: inline-block;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-bottom: 6px solid $backgroundColor;
+				padding-top: 9px;
+				position: absolute;
+				top: -15px;
+				right: 45px + 2px;
+			}
+		} 
+		@media (max-width: $screen-xs-max) {
+			.dropdown-menu-hide{
+				margin-top: 0!important;
+				text-align: center;
+				li {
+					width: 19%;
+					display: inline-block;
+					a {
+						padding: 0px;
+					}
+				}
+			}
+			.nav-avatar-hide {
+				display: inline-block;
+				float: right;
+				padding: 0px;
+				margin: 10px 15px;
+			}
+			>li {
+				&.dropdown {
+					display: none;
+				}
+				display: inline-block;
+				form {
+					border-color: $backgroundColor;
+					width: 75%;
+					display: inline-block;
+					.nav-avatar {
+						display: block!important;
+					}
+				}
+			}
+		}
+		@media (min-width: $screen-xs-max) {
+			.nav-avatar-hide ,.dropdown-menu-hide{
+				display: none;
 			}
 		}
 	}
