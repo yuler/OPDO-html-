@@ -1,7 +1,8 @@
 {
   "name": "my-project",
   "dependencies": {
-    "raty": "~2.7.0"
+    "raty": "~2.7.0",
+    "jquery-placeholder": "~2.1.1"
   },
   "devDependencies": {}
 }

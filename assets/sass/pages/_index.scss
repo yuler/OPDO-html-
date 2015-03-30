@@ -1,4 +1,4 @@
-.index {
+.index, .settings {
 	.nav-tags {
 		margin: 15px 0;
 		border: 2px solid $themeColor;
@@ -10,10 +10,6 @@
 					border:0px;
 				}
 			}
-			/* &:after {
-				content: '';
-				border-right: 2px solid $themeColor;
-			} */
 			h4 {
 				padding-left: 0.8em;
 				border-left: 2px solid $themeColor;
@@ -37,6 +33,7 @@
 					width: 50%;
 					text-align: center;
 					@media (max-width: $screen-md-max){ 
+						padding-left:30%;
 						width: 100%;
 					}
 					list-style-type: none;	
@@ -45,7 +42,7 @@
 		}
 	}
 
-	.index-main{
+	.index-main, .settings-content {
 		
 		.videos-head-category,.videos-nohead-category{
 			.video-list {
@@ -105,10 +102,13 @@
 						}
 						color: white;
 						background-color: rgba(0, 0, 0, 0.5);
-						span:last-child {
-							float:right;
+						filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#5f000000,endColorstr=#5f000000);
+						span {
 							.fa {
 								color:white;
+							}
+							&.icons{
+								float:right;
 							}
 						}
 					}

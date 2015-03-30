@@ -17,21 +17,29 @@ $(function(){
 	});
 	
 
-
 });
-_V_("podo_video_1").ready(function(){
 
-	// Store the video object
-	var myPlayer = this; 
-	// Make up an aspect ratio
-	var aspectRatio = 9/16; 
-	function resizeVideoJS(){
-		var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
-		myPlayer.width(width - 30).height( width * aspectRatio );
-	}
-	// Initialize resizeVideoJS()
-	resizeVideoJS();
-	// Then on resize call resizeVideoJS()
-	window.onresize = resizeVideoJS; 
+$('input, textarea').placeholder();
 
-});
+if($("#podo_video_1").length > 0){
+	_V_("podo_video_1").ready(function(){
+		// Store the video object
+		var myPlayer = this; 
+		// Make up an aspect ratio
+		var aspectRatio = 9/16; 
+		function resizeVideoJS(){
+			var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+			myPlayer.width(width - 30).height( width * aspectRatio );
+			console.log(document.body.clientWidth);
+			if(document.body.clientWidth >= 992-15 ){
+				$('.video-nav .tab-content').height(width * aspectRatio - 64);
+			}else {
+				$('.video-nav .tab-content').height(115);
+			}
+		}
+		// Initialize resizeVideoJS()
+		resizeVideoJS();
+		// Then on resize call resizeVideoJS()
+		window.onresize = resizeVideoJS; 
+	});
+}
