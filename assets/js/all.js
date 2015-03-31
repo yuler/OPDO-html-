@@ -16,10 +16,8 @@ $(function(){
 		starOn: 'fa fa-star',
 	});
 	
-
 });
 
-$('input, textarea').placeholder();
 
 if($("#podo_video_1").length > 0){
 	_V_("podo_video_1").ready(function(){
